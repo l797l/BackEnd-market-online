@@ -2,18 +2,18 @@ using System.ComponentModel.DataAnnotations;
 
 namespace WebApplication2.DBContext.Modules;
 
-public class OrderProdect
+public class OrderProduct
 {
     [Key][Required]
-    int Id { get; set; }
+    public  int Id { get; set; }
     [Required]
-    dynamic price  { get; set; }
+    public  decimal price  { get; set; }
     [Required]
-    int ProductId { get; set; }
+    public  int ProductId { get; set; }
     [Required]
-    int OrderId { get; set; }
-    Orders Order { get; set; }
-    Product Product { get; set; }
+    public int OrderId { get; set; }
+    public Orders Order { get; set; }
+    public Product Product { get; set; }
     
     
 }

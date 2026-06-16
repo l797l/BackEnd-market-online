@@ -6,9 +6,9 @@ public class AppDBContext: DbContext
 {
     public AppDBContext(DbContextOptions<AppDBContext> options): base(options) {}
     public DbSet<Users>  Users { get; set; }
-    public DbSet<Product>  Products { get; set; }
+    public DbSet<Product>  Product{ get; set; }
     public DbSet<Orders>  Orders { get; set; }
-    public DbSet<OrderProduct> OrderProducts { get; set; }
-    public DbSet<ImgProduct>ImgProducts { get; set; }
+    public DbSet<OrderProduct> OrderProduct { get; set; }
+    public DbSet<ImgProduct>ImgProduct { get; set; }
     
 }
